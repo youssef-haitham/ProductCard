@@ -1,0 +1,66 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 20px;
+}
+
+.discountPrice {
+    font-size: x-large;
+}
+
+p{
+margin: 0;
+}
+
+.price {
+    position: relative;
+  }
+  
+  .price:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 1px solid;
+    border-color: inherit;
+  
+    -webkit-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+    transform:rotate(10deg);
+  }
+
+.prices ins {
+    color: #4195D1;
+    font-size: 32px;
+    text-decoration: none;
+    padding-right: 0.5em;
+  }
+
+
+  .prices del{
+    color: grey;
+    text-decoration: none;
+  }
+
+
+  .btn {
+    border-radius: 40px;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5px;
+}
+
+
+
+.withoutDiscount {
+  color: #4195D1;
+}
+
+
+  
+
+
