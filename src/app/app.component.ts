@@ -12,6 +12,6 @@ export class AppComponent {
     description: 'Product Description Goes Here',
     price: 25.5,
     discountPrice: 20.5,
-    imgSRC: "../assets/novaldol.png"
+    imgSRC: "../assets/catafast.png"
   };
 }

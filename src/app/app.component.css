@@ -59,11 +59,11 @@
     margin-top: 5px;
     background-color: white;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-helvetica);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-4195d1);
-font: normal normal normal 20px/24px Helvetica;
-letter-spacing: 0px;
-color: #4195D1;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-4195d1);
+    font: normal normal normal 20px/24px Helvetica;
+    letter-spacing: 0px;
+    color: #4195D1;
     border-color: #4195D1;
     border: 1px solid var(--unnamed-color-4195d1);
     border: 1px solid #4195D1;
@@ -75,14 +75,13 @@ color: #4195D1;
   background: var(--unnamed-color-6ca9d5) 0% 0% no-repeat padding-box;
   background: #6CA9D5 0% 0% no-repeat padding-box;
   border-radius: 25px;
-  opacity: 1;
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-helvetica);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-ffffff);
-font: normal normal normal 20px/24px Helvetica;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  font: normal normal normal 20px/24px Helvetica;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 
@@ -101,31 +100,12 @@ background: #FFFFFF 0% 0% no-repeat padding-box;
 box-shadow: 0px 3px 6px #00000029;
 opacity: 1;
 }
-  
-
-.wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.wrapper:after {
-  content: '';
-  display: block;
-  padding-top: 80%;
-}
-
-.wrapper img {
-  max-width: none;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-}
-
 
 .card-body{
-  box-shadow: 0 5px 3px rgba(0,0,0,0.16), 0 1px 2px rgba(0, 0, 0, 0.007);
-  border: 1pt solid whitesmoke
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
 }
 
 .card-title{
@@ -152,19 +132,19 @@ opacity: 1;
 
 .egy{
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-16) var(--unnamed-font-family-helvetica);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-4195d1);
-text-align: right;
-font: normal normal bold 14px/16px Helvetica;
-letter-spacing: 0px;
-color: #4195D1;
-opacity: 1;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-4195d1);
+  text-align: right;
+  font: normal normal bold 14px/16px Helvetica;
+  letter-spacing: 0px;
+  color: #4195D1;
+  opacity: 1;
 }
 
 
 .card-img-top{
-background: transparent 0% 0% no-repeat padding-box;
-box-shadow: 0px 3px 6px #0000000A;
-border-radius: 10px 10px 0px 0px;
-opacity: 1;
+  background: transparent 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000000A;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 1;
 }
