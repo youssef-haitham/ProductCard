@@ -8,9 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'product';
   product = {
-    title: 'Novaldol',
-    description: 'Pain Killer',
+    title: 'Product Title Goes Here',
+    description: 'Product Description Goes Here',
     price: 25.5,
-    discountPrice: 20.5
+    discountPrice: 20.5,
+    imgSRC: "../assets/novaldol.png"
   };
 }

@@ -4,50 +4,24 @@
       <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2">
         <div class="card">
           <div class="wrapper">
-            <img src="../assets/novaldol.png" class="card-img-top" alt="Novaldol">
+            <img src="{{product.imgSRC}}" loading="lazy" class="card-img-top" alt="Novaldol">
           </div>
           <div class="card-body">
-            <h5 class="card-title" style="color: #707070;">{{product.title}}</h5>
-            <h6 class="card-text" style="color: #707070;">{{product.description}}</h6>
+            <p class="card-title">{{product.title}}</p>
+            <p class="card-text">{{product.description}}</p>
             <div class="prices" *ngIf="!!product.discountPrice">
               <ins>
-                <span class="discountPrice">{{product.discountPrice}}<small>EGY</small></span>
+                <span class="discountPrice">{{product.discountPrice}}EGY</span>
               </ins>
               <del>
-                <span class="price">{{product.price}}<small>EGY</small></span>
+                <span class="price">{{product.price}}EGY</span>
               </del>
             </div>
-            <span *ngIf="product.discountPrice == null" class="withoutDiscount">{{product.price}}<small>EGY</small></span>
-              <a type="button" class="btn btn-primary"> <i class="bi bi-cart"></i> Add to Cart</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2">
-        <div class="card">
-          <div class="wrapper">
-            <img src="../assets/catafast.png" class="card-img-top" alt="Novaldol">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title" style="color: #707070;">{{product.title}}</h5>
-            <h6 class="card-text" style="color: #707070;">{{product.description}}</h6>
-            <div class="prices" *ngIf="!!product.discountPrice">
-              <ins>
-                <span class="discountPrice">{{product.discountPrice}}<small>EGY</small></span>
-              </ins>
-              <del>
-                <span class="price">{{product.price}}<small>EGY</small></span>
-              </del>
-            </div>
-            <span *ngIf="product.discountPrice == null" class="withoutDiscount">{{product.price}}<small>EGY</small></span>
-              <a type="button" class="btn btn-primary"> <i class="bi bi-cart"></i> Add to Cart</a>
+            <span *ngIf="product.discountPrice == null" class="withoutDiscount">{{product.price}}EGY</span>
+              <a type="button" id="cardButton" class="btn btn-primary"> <i class="bi bi-cart"></i> Add to Cart</a>
           </div>
         </div>
       </div>
       
-
     </div>  
   </div>
-
-  
-  
