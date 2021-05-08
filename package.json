@@ -22,6 +22,7 @@
     "@ng-bootstrap/ng-bootstrap": "^5.3.1",
     "bootstrap": "^4.6.0",
     "bootstrap-icons": "^1.4.1",
+    "ngx-shimmer-loading": "0.0.5",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

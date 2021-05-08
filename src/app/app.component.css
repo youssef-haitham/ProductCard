@@ -4,12 +4,97 @@
     opacity: 1;
 }
 
+.card {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  box-sizing: content-box;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper:after {
+  content: '';
+  display: block;
+  padding-top: 75%;
+}
+
+.wrapper img {
+  max-width: none;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.card-img-top{
+  background: transparent 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000000A;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 1;
+}
+
+.card-body{
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+
+.card-title{
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 15px/17px var(--unnamed-font-family-helvetica);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-707070);
+  text-align: left;
+  font: normal normal normal 15px/17px Helvetica;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+}
+
+.card-text{
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 10px/11px Arial;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-707070);
+  text-align: left;
+  font: normal normal normal 10px/11px Arial;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+}
+
+.prices ins {
+  color: #4195D1;
+  text-decoration: none;
+  padding-right: 0.5em;
+}
+
+.prices del{
+  color: grey;
+  text-decoration: none;
+}
+
 .discountPrice {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 18px/21px var(--unnamed-font-family-helvetica);
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-4195d1);
   text-align: right;
   font: normal normal bold 18px/21px Helvetica;
+  letter-spacing: 0px;
+  color: #4195D1;
+  opacity: 1;
+}
+
+.egy{
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-16) var(--unnamed-font-family-helvetica);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-4195d1);
+  text-align: right;
+  font: normal normal bold 14px/16px Helvetica;
   letter-spacing: 0px;
   color: #4195D1;
   opacity: 1;
@@ -39,18 +124,16 @@
     transform:rotate(10deg);
   }
 
-.prices ins {
+  .withoutDiscount {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 18px/21px var(--unnamed-font-family-helvetica);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-4195d1);
+    text-align: right;
+    font: normal normal bold 18px/21px Helvetica;
+    letter-spacing: 0px;
     color: #4195D1;
-    text-decoration: none;
-    padding-right: 0.5em;
+    opacity: 1;
   }
-
-
-  .prices del{
-    color: grey;
-    text-decoration: none;
-  }
-
 
   #cardButton {
     border-radius: 40px;
@@ -86,68 +169,27 @@
 
 
 
-.withoutDiscount {
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 18px/21px var(--unnamed-font-family-helvetica);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-4195d1);
-  text-align: right;
-  font: normal normal bold 18px/21px Helvetica;
-  letter-spacing: 0px;
-  color: #4195D1;
-  opacity: 1;
-}
-
-.card {
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-box-shadow: 0px 3px 6px #00000029;
-opacity: 1;
-}
-
-.card-body{
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  opacity: 1;
-}
-
-.card-title{
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 15px/17px var(--unnamed-font-family-helvetica);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-707070);
-  text-align: left;
-  font: normal normal normal 15px/17px Helvetica;
-  letter-spacing: 0px;
-  color: #707070;
-  opacity: 1;
-}
-
-.card-text{
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 10px/11px Arial;
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-707070);
-  text-align: left;
-  font: normal normal normal 10px/11px Arial;
-  letter-spacing: 0px;
-  color: #707070;
-  opacity: 1;
-}
-
-.egy{
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-16) var(--unnamed-font-family-helvetica);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-4195d1);
-  text-align: right;
-  font: normal normal bold 14px/16px Helvetica;
-  letter-spacing: 0px;
-  color: #4195D1;
-  opacity: 1;
-}
+                           /* -------------- Shimmer loading card using animation ------------------- */
 
 
-.card-img-top{
-  background: transparent 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #0000000A;
-  border-radius: 10px 10px 0px 0px;
-  opacity: 1;
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
 }
+
+.comment {
+  height: 10px;
+  background: #777;
+  margin-top: 20px;
+}
+
+.animate {
+  animation : shimmer 2s infinite;
+  background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+  background-size: 1000px 100%;
+}
+
